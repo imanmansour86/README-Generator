@@ -42,6 +42,28 @@ const questions = [
     message: "To who you give credits?",
     name: "credits",
   },
+
+  {
+    //section full name
+    type: "input",
+    message: "Enter full name",
+    name: "name",
+  },
+
+  {
+    //section email
+    type: "input",
+    message: "Enter full name",
+    name: "email",
+  },
+
+  {
+    //section github
+    type: "input",
+    message: "Enter github username",
+    name: "github",
+  },
+
   {
     //license credits
     type: "list",

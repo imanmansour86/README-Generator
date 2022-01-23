@@ -8,11 +8,6 @@
   * [](#)
 
   
-
-
-
-
-
   ## Installation
 
    
@@ -26,10 +21,9 @@
   ## License
 
  
-  This project is licensed under the MIT
+  This project is licensed under the Boost Software License 1.0
 
-   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-https://choosealicense.com/licenses/mit/
+   [![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)<br>https://choosealicense.com/licenses/bsl-1.0/
 
    ## Badges
 
@@ -40,4 +34,15 @@ https://choosealicense.com/licenses/mit/
 ## Tests
 
   
+
+  ## Questions
+
+  Reach the project ownder at: 
+
+  **Iman Man**
+
+ 
+  * [Github](https://github.com/imanmansor)
+  * [Email](mailto:m)
+
 
