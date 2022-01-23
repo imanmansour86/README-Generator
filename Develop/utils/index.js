@@ -1,6 +1,7 @@
 // TODO: Include packages needed for this application
 const fs = require("fs");
 const inquirer = require("inquirer");
+const generateMarkdown = require("./generateMarkdown");
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -17,6 +18,7 @@ const questions = [
     name: "description",
   },
   {
+    //section TOC
     type: "input",
     message: "What is your Table of Contents ?",
     name: "toc",
@@ -31,13 +33,13 @@ const questions = [
     //section usage
     type: "input",
     message: "What is your app usage ?",
-    name: "appUse",
+    name: "usage",
   },
   {
     type: "list",
     message: "What is your app license ?",
     name: "license",
-    choices = ['BSD','MIT','GPL']
+    choices: ["BSD", "MIT", "GPL"],
   },
   {
     //section Contributing
@@ -60,7 +62,9 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  fs.writeFile("README.md", JSON.stringify(data), (err) =>
+  const readMeText = generateMarkdown(data);
+  console.log("rearMeText is ", readMeText);
+  fs.writeFile(fileName, readMeText, (err) =>
     err ? console.error(err) : console.log("Success!")
   );
 }
