@@ -13,18 +13,38 @@ function renderLicenseSection(license) {}
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${transform(data.title)}
-  ## ${data.description}
-  ## ${data.toc}
-  ## ${data.install}
-  ## ${data.usage}
-  ## ${data.license}
-  ## ${data.contribute}
-  ## ${data.tests}
-  ## ${data.questions}
+  ## Description.\n
+  ${data.description.charAt(0).toUpperCase() + data.description.slice(1)}
+  ## Table of Contents\n
+
+  ${generateToc(data.toc)}
+  
+
+
+
+
+
+  ## Installation\n
+   ${data.install}
+  ## Usage\n
+  ${data.usage}
+  ## Credits\n
+  ${data.credits}
+
+  ## License\n
+   ${data.license}
+
+   ## Badges\n
+   ${data.badges}
+   ## Contributing\n
+${data.contribute}
+## Tests\n
+  ${data.tests}
+
 `;
 }
 
-//function to upper case every letter in a string
+//Function to upper case every letter in a string
 function transform(str) {
   var splitStr = str.toLowerCase().split(" ");
   for (var i = 0; i < splitStr.length; i++) {
@@ -32,6 +52,15 @@ function transform(str) {
       splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
   }
   return splitStr.join(" ");
+}
+
+// function to return one word in TOC markdown format
+function generateToc(str) {
+  const singleWord = transform(str);
+  return singleWord
+    .split(" ")
+    .map((item) => `* [${item}](#${item})\n`)
+    .join("\n");
 }
 
 module.exports = generateMarkdown;

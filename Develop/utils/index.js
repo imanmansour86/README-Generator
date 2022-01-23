@@ -35,12 +35,28 @@ const questions = [
     message: "What is your app usage ?",
     name: "usage",
   },
+
   {
+    //section credits
+    type: "input",
+    message: "To who you give credits?",
+    name: "credits",
+  },
+  {
+    //license credits
     type: "list",
     message: "What is your app license ?",
     name: "license",
     choices: ["BSD", "MIT", "GPL"],
   },
+
+  // {  //badges credits
+  //   type: "list",
+  //   message: "What is your app license ?",
+  //   name: "license",
+  //   choices: ["BSD", "MIT", "GPL"],
+  // },
+
   {
     //section Contributing
     type: "input",
@@ -52,11 +68,6 @@ const questions = [
     type: "input",
     message: "What is your app test instructions ?",
     name: "tests",
-  },
-  {
-    type: "input",
-    message: "What is your app questions ?",
-    name: "questions",
   },
 ];
 
