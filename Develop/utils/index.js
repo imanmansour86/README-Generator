@@ -47,7 +47,12 @@ const questions = [
     type: "list",
     message: "What is your app license ?",
     name: "license",
-    choices: ["BSD", "MIT", "GPL"],
+    choices: [
+      "Boost Software License 1.0",
+      "MIT",
+      "Apache 2.0 License",
+      "No License",
+    ],
   },
 
   // {  //badges credits

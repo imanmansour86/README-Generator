@@ -5,15 +5,7 @@
   ## Table of Contents
 
 
-  * [One](#One)
-
-* [Two](#Two)
-
-* [Three](#Three)
-
-* [Four](#Four)
-
-* [Testing](#Testing)
+  * [](#)
 
   
 
@@ -33,7 +25,11 @@
 
   ## License
 
-   BSD
+ 
+  This project is licensed under the MIT
+
+   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+https://choosealicense.com/licenses/mit/
 
    ## Badges
 
