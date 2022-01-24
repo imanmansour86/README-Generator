@@ -18,11 +18,11 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   switch (license) {
     case "Boost Software License 1.0":
-      return `https://choosealicense.com/licenses/bsl-1.0/`;
+      return `https://opensource.org/licenses/BSD-3-Clause`;
     case "MIT":
-      return `https://choosealicense.com/licenses/mit/`;
+      return `https://opensource.org/licenses/MIT`;
     case "Apache 2.0 License":
-      return `https://choosealicense.com/licenses/apache-2.0/`;
+      return `https://opensource.org/licenses/Apache-2.0`;
     case "No License":
       return ``;
   }
@@ -37,6 +37,8 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `
+${renderLicenseBadge(data.license)}\n
+
 # ${transform(data.title)}
 
 ## Description
@@ -58,7 +60,7 @@ ${transform(data.usage)}
 
 ${transform(data.credits)}
 
-## License
+## License 
  ${data.license === `No License` ? "" : renderLicenseSection(data.license)}\n
 
 
