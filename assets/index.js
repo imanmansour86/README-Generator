@@ -46,14 +46,14 @@ const questions = [
   {
     //section full name
     type: "input",
-    message: "Enter full name",
+    message: "What is your full name",
     name: "name",
   },
 
   {
     //section email
     type: "input",
-    message: "Enter full name",
+    message: "What is your email",
     name: "email",
   },
 

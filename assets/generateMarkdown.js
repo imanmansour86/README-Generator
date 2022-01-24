@@ -36,38 +36,52 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${transform(data.title)}
-  ## Description.\n
-  ${data.description.charAt(0).toUpperCase() + data.description.slice(1)}
-  ## Table of Contents\n
+  return `
+# ${transform(data.title)}
 
-  ${generateToc(data.toc)}
-  
-  ## Installation\n
-   ${data.install}
-  ## Usage\n
-  ${data.usage}
-  ## Credits\n
-  ${data.credits}
+## Description
 
-  ## License\n
- 
-  This project is licensed under the ${data.license}\n
+${data.description.charAt(0).toUpperCase() + data.description.slice(1)}
+
+## Table of Contents
+
+${generateToc(data.toc)}
+
+## Installation
+
+${data.install}
+
+## Usage
+${data.usage}
+
+## Credits
+
+${data.credits}
+
+## License
+This project is licensed under the ${data.license}\n
    ${renderLicenseSection(data.license)}
 
-   ## Badges\n
-   ${data.badges}
-   ## Contributing\n
-${data.contribute}
-## Tests\n
-  ${data.tests}
+## Badges
 
-  ## Questions\n
-  You can reach the project ownner at: \n
-  **${transform(data.name)}**\n
+${data.badges}
+
+## Contributing
+
+${data.contribute}
+
+## Tests
+
+${data.tests}
+
+## Questions
+
+You can reach the project ownner at: 
+
+**${transform(data.name)}**\n
  
-  * [Github](https://github.com/${data.github})
-  * [Email](mailto:${data.email})
+* [Github](https://github.com/${data.github})
+* [Email](mailto:${data.email})
 
 
 `;
@@ -89,7 +103,7 @@ function generateToc(str) {
   return singleWord
     .split(" ")
     .map((item) => `* [${item}](#${item})\n`)
-    .join("\n");
+    .join("");
 }
 
 module.exports = generateMarkdown;
