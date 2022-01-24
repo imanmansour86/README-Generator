@@ -52,27 +52,23 @@ ${generateToc(data.toc)}
 \`\`\`${data.install}\`\`\`
 
 ## Usage
-${data.usage}
+${transform(data.usage)}
 
 ## Credits
 
-${data.credits}
+${transform(data.credits)}
 
 ## License
 This project is licensed under the ${data.license}\n
    ${renderLicenseSection(data.license)}
 
-## Badges
-
-${data.badges}
-
 ## Contributing
 
-${data.contribute}
+${transform(data.contribute)}
 
 ## Tests
 
-${data.tests}
+${transform(data.tests)}
 
 ## Questions
 
@@ -99,10 +95,10 @@ function transform(str) {
 
 // function to return one word in TOC markdown format
 function generateToc(str) {
-  const singleWord = transform(str);
-  return singleWord
+  // const singleWord = transform(str);
+  return str
     .split(" ")
-    .map((item) => `* [${item}](#${item})\n`)
+    .map((item) => `* [${transform(item)}](#${item.toLowerCase()})\n`)
     .join("");
 }
 

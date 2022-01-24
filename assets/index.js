@@ -77,13 +77,6 @@ const questions = [
     ],
   },
 
-  // {  //badges credits
-  //   type: "list",
-  //   message: "What is your app license ?",
-  //   name: "license",
-  //   choices: ["BSD", "MIT", "GPL"],
-  // },
-
   {
     //section Contributing
     type: "input",
