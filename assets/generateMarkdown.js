@@ -61,7 +61,13 @@ ${transform(data.usage)}
 ${transform(data.credits)}
 
 ## License 
- ${data.license === `No License` ? "" : renderLicenseSection(data.license)}\n
+${
+  data.license === `No License`
+    ? ""
+    : `This application is covered under :
+
+${renderLicenseSection(data.license)} `
+}\n
 
 
 ## Contributing
