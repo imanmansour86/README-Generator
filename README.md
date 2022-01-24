@@ -37,11 +37,12 @@ When working on a project, it's important to have a high quality README file for
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+Screenshot of questions prompt in command line:
 
-```md
-![alt text](assets/images/screenshot.png)
-```
+![command-line](/assets/images/questions.png)
+
+Screenshot of the response:
+![response](/assets/images/response.png)
 
 ## Demo
 

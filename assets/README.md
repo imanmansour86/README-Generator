@@ -1,55 +1,61 @@
 
-[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
-# Gfdg
+# Create A Readme
 
 ## Description
 
-Gfg
+Dynamically create a readme based on certain questions in command line
 
 ## Table of Contents
 
-* [Fdgf](#fdgf)
+* [Descriptipn](#descriptipn)
+* [Installatipn](#installatipn)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
+* [Contributing](#contributing)
+* [Tests](#tests)
+* [Questions](#questions)
 
 
 ## Installation
 
-```gf```
+```npm install```
 
 ## Usage
-Gf
+Professional Readme Generator
 
 ## Credits
 
-Gf
+Documentation
 
 ## License 
 This application is covered under :
 
-[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)<br>https://opensource.org/licenses/BSD-3-Clause 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)<br>https://opensource.org/licenses/MIT 
 
 
 
 ## Contributing
 
-
+Copyright To Iman Mansour
 
 ## Tests
 
-* First Line 
-*  Second Line 
-* Last Line So I Can Test It
+* Run Command Line
+* Open Readme
 
 
 ## Questions
 
 You can reach the project ownner at: 
 
-**Gf**
+**Iman Mansour**
 
  
-* [Github](https://github.com/gf)
-* [Email](mailto:gf)
+* [Github](https://github.com/imanmansour86)
+* [Email](mailto:imanmansour86@gmail.com)
 
 
