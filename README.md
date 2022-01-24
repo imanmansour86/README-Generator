@@ -4,7 +4,7 @@
 
 ## Description
 
-When working on a project, it's important to have a high quality README file for project. This application is deisgned to allow generating a professional README file dynamically using command-line application in node. The generated file is created based on user's input from questions created using the Inquirer package.
+When working on a project, it's important to have a high quality README file for the project. This application is deisgned to allow generating a professional README file dynamically using command-line application in node. The generated file is created based on user's input from questions created using the Inquirer package.
 
 ## Table of Contents
 
@@ -12,15 +12,14 @@ When working on a project, it's important to have a high quality README file for
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
--
 
 ## Installation
 
-- Go to app repo in github and clone the app: https://github.com/imanmansour86/README-GeneratorClone
+- Go to the app's repo in github and clone the app: https://github.com/imanmansour86/README-GeneratorClone
 - From terminal: navigate to app's directoty and run:
 
   ```md
-      $ npm install
+  $ npm install
   ```
 
 - From terminal, run:

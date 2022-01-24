@@ -76,7 +76,7 @@ ${transform(data.contribute)}
 
 ## Tests
 
-${transform(data.tests)}
+${transformInstructions(data.tests)}
 
 ## Questions
 
@@ -107,6 +107,13 @@ function generateToc(str) {
   return str
     .split(" ")
     .map((item) => `* [${transform(item)}](#${item.toLowerCase()})\n`)
+    .join("");
+}
+
+function transformInstructions(str) {
+  return str
+    .split("-")
+    .map((item) => `* ${transform(item)}\n`)
     .join("");
 }
 

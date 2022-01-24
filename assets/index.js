@@ -86,7 +86,7 @@ const questions = [
   {
     //section Tests
     type: "input",
-    message: "What is your app test instructions ?",
+    message: 'What is your app test instructions(separate by "-" ) ?',
     name: "tests",
   },
 ];
