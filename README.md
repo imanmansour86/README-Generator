@@ -1,4 +1,6 @@
-# Portfolio
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
+# README Generator
 
 ## Description
 
@@ -17,15 +19,15 @@ When working on a project, it's important to have a high quality README file for
 - Go to app repo in github and clone the app: https://github.com/imanmansour86/README-GeneratorClone
 - From terminal: navigate to app's directoty and run:
 
-```md
-$ npm install
-```
+  ```md
+      $ npm install
+  ```
 
 - From terminal, run:
 
-```
-node index.js
-```
+  ```
+  $ node index.js
+  ```
 
 ## Usage
 
@@ -37,9 +39,9 @@ Provide instructions and examples for use. Include screenshots as needed.
 
 ## Demo
 
-## License
-
 ## Features
+
+When running the app in terminal, the user will be asked questions about: Title of the project, project description, Table of contents, installation steps, app usage, credits, full name, email, github username, license, contributing guidelines, app test instructions. After the user answer all questions, a professional README file is generated with user's response.
 
 ## Built With
 
@@ -52,10 +54,6 @@ Provide instructions and examples for use. Include screenshots as needed.
 - [W3schools](https://www.w3schools.com)
 - [stackoverflow](https://stackoverflow.com)
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS)
-
-## License
-
-This project is licensed under the MIT License
 
 ## Author
 
