@@ -2,16 +2,23 @@
 
 # README Generator
 
+## Table of Contents
+
+- [README Generator](#readme-generator)
+  - [Table of Contents](#table-of-contents)
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Demo](#demo)
+  - [Features](#features)
+  - [Built With](#built-with)
+  - [Resources Used](#resources-used)
+  - [Author](#author)
+  - [License](#license)
+
 ## Description
 
 When working on a project, it's important to have a high quality README file for the project. This application is deisgned to allow generating a professional README file dynamically using command-line application in node. The generated file is created based on user's input from questions created using the Inquirer package.
-
-## Table of Contents
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Credits](#credits)
-- [License](#license)
 
 ## Installation
 
