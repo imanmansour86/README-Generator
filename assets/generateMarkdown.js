@@ -39,7 +39,7 @@ function generateMarkdown(data) {
   return `
 ${renderLicenseBadge(data.license)}\n
 
-# ${transform(data.title)}
+# ${capitalize(data.title)}
 
 ## Description
 
@@ -54,11 +54,11 @@ ${generateToc(data.toc)}
 \`\`\`${data.install}\`\`\`
 
 ## Usage
-${transform(data.usage)}
+${capitalize(data.usage)}
 
 ## Credits
 
-${transform(data.credits)}
+${capitalize(data.credits)}
 
 ## License 
 ${
@@ -72,17 +72,17 @@ ${renderLicenseSection(data.license)} `
 
 ## Contributing
 
-${transform(data.contribute)}
+${capitalize(data.contribute)}
 
 ## Tests
 
-${transformInstructions(data.tests)}
+${capitalizeInstructions(data.tests)}
 
 ## Questions
 
 You can reach the project ownner at: 
 
-**${transform(data.name)}**\n
+**${capitalize(data.name)}**\n
  
 * [Github](https://github.com/${data.github})
 * [Email](mailto:${data.email})
@@ -91,14 +91,14 @@ You can reach the project ownner at:
 `;
 }
 
-//Function to upper case every letter in a string
-function transform(str) {
-  var splitStr = str.toLowerCase().split(" ");
-  for (var i = 0; i < splitStr.length; i++) {
-    splitStr[i] =
-      splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
-  }
-  return splitStr.join(" ");
+//Function to capitalize case every first letter in a string
+function capitalize(str) {
+  return str
+    .split(" ")
+    .map((word) => {
+      return word.substring(0, 1).toUpperCase() + word.substring(1);
+    })
+    .join(" ");
 }
 
 // function to return one word in TOC markdown format
@@ -106,14 +106,14 @@ function generateToc(str) {
   // const singleWord = transform(str);
   return str
     .split(" ")
-    .map((item) => `* [${transform(item)}](#${item.toLowerCase()})\n`)
+    .map((item) => `* [${capitalize(item)}](#${item.toLowerCase()})\n`)
     .join("");
 }
 
-function transformInstructions(str) {
+function capitalizeInstructions(str) {
   return str
     .split("-")
-    .map((item) => `* ${transform(item)}\n`)
+    .map((item) => `* ${capitalize(item)}\n`)
     .join("");
 }
 
