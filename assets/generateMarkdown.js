@@ -49,7 +49,7 @@ ${generateToc(data.toc)}
 
 ## Installation
 
-${data.install}
+\`\`\`${data.install}\`\`\`
 
 ## Usage
 ${data.usage}
