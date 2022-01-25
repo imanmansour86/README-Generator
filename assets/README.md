@@ -1,52 +1,59 @@
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-# Hsda AsdSD
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
+# Readme Generator
 
 ## Description
 
-Sdsa dsads
+Dynamically generate a readme
 
 ## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [Questions](#questions)
+* [Contributing](#contributing)
+* [License](#license)
 
-- [Dfs](#dfs)
-- [Fdf](#fdf)
-- [Dffdg](#dffdg)
-- [Yert](#yert)
-- [Ertsertretre](#ertsertretre)
 
 ## Installation
 
-`npm install`
+```npm install```
 
 ## Usage
-
-Fds Zfsdfds
+For Anyone Who Wants To Generate A Readme
 
 ## Credits
 
-Dfds
+Inquirer Package And Nodejs
 
-## License
-
+## License 
 This application is covered under :
 
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)<br>https://opensource.org/licenses/Apache-2.0
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)<br>https://opensource.org/licenses/MIT 
+
+
 
 ## Contributing
 
-Fd
+Copyright Iman Mansour
 
 ## Tests
 
-- One
-- Two Three
-- Four
+* Run App From Command Line
+* Answer Questions
+* Open Generated Readme File
+
 
 ## Questions
 
-You can reach the project ownner at:
+You can reach the project ownner at: 
 
-**Fsd**
+**Iman Mansour**
 
-- [Github](https://github.com/fds)
-- [Email](mailto:dfdsf)
+ 
+* [Github](https://github.com/imanmansour86)
+* [Email](mailto:imanmansour86@gmail.com)
+
+

@@ -46,7 +46,6 @@ ${renderLicenseBadge(data.license)}\n
 ${data.description.charAt(0).toUpperCase() + data.description.slice(1)}
 
 ## Table of Contents
-
 ${generateToc(data.toc)}
 
 ## Installation
@@ -103,7 +102,6 @@ function capitalize(str) {
 
 // function to return one word in TOC markdown format
 function generateToc(str) {
-  // const singleWord = transform(str);
   return str
     .split(" ")
     .map((item) => `* [${capitalize(item)}](#${item.toLowerCase()})\n`)
