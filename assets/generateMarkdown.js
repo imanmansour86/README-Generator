@@ -75,7 +75,7 @@ ${capitalize(data.contribute)}
 
 ## Tests
 
-${capitalizeFirstLetter(data.tests)}
+${capitalizeInstructions(data.tests)}
 
 ## Questions
 

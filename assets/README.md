@@ -42,7 +42,10 @@ Copyright Iman Mansour
 
 ## Tests
 
-Run app from command line - answer questions - open generated readme
+* Run App From Command Line 
+*  Answer Questions 
+*  Open Generated Readme
+
 
 ## Questions
 
