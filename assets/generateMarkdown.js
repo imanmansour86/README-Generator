@@ -108,6 +108,7 @@ function generateToc(str) {
     .join("");
 }
 
+//function to capitalize first letter of instructions and return every instruction on a new line
 function capitalizeInstructions(str) {
   return str
     .split("-")

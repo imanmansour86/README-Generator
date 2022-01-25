@@ -46,6 +46,8 @@ Screenshot of the response:
 
 ## Demo
 
+- [Demo Link](https://watch.screencastify.com/v/rt1BXwEldgI7u1T8DhLd)
+
 ## Features
 
 When running the app in terminal, the user will be asked questions about: Title of the project, project description, Table of contents, installation steps, app usage, credits, full name, email, github username, license, contributing guidelines, app test instructions. After the user answer all questions, a professional README file is generated with user's response.

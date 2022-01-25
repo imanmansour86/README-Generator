@@ -44,21 +44,21 @@ const questions = [
   },
 
   {
-    //section full name
+    //section questions
     type: "input",
     message: "What is your full name",
     name: "name",
   },
 
   {
-    //section email
+    //section questions
     type: "input",
     message: "What is your email",
     name: "email",
   },
 
   {
-    //section github
+    //section questions
     type: "input",
     message: "Enter github username",
     name: "github",
