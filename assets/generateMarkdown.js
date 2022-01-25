@@ -43,7 +43,7 @@ ${renderLicenseBadge(data.license)}\n
 
 ## Description
 
-${data.description.charAt(0).toUpperCase() + data.description.slice(1)}
+${capitalizeFirstLetter(data.description)}
 
 ## Table of Contents
 ${generateToc(data.toc)}
@@ -53,11 +53,11 @@ ${generateToc(data.toc)}
 \`\`\`${data.install}\`\`\`
 
 ## Usage
-${capitalize(data.usage)}
+${capitalizeFirstLetter(data.usage)}
 
 ## Credits
 
-${capitalize(data.credits)}
+${capitalizeFirstLetter(data.credits)}
 
 ## License 
 ${
@@ -75,7 +75,7 @@ ${capitalize(data.contribute)}
 
 ## Tests
 
-${capitalizeInstructions(data.tests)}
+${capitalizeFirstLetter(data.tests)}
 
 ## Questions
 
@@ -98,6 +98,11 @@ function capitalize(str) {
       return word.substring(0, 1).toUpperCase() + word.substring(1);
     })
     .join(" ");
+}
+
+//Function to capitalize first letter only
+function capitalizeFirstLetter(str) {
+  return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
 // function to return one word in TOC markdown format
